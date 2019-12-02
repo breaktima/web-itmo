@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<HTML lang="en">
+<HEAD>
+    <meta charset="utf-8">
+    <TITLE> Title </TITLE>
+    <style>
+        div{
+            margin: 12px;
+        }
+        p{
+            margin: 6px;
+        }
+    </style>
+</HEAD>
+<BODY>
+
+<form id="tableForm">
+    <div><label for="cols">Columns:</label><input type="text" id="cols" oninput="check_negative(this)"></div>
+    <div><label for="rows">Rows:</label><input type="text" id="rows" oninput="check_negative(this)"><br></div>
+    <div><input type="button" id ="submit" value="create" onclick="createTable()"></div>
+</form>
+
+<script src="scripts.js"></script>
+
+</BODY>
+</HTML>
